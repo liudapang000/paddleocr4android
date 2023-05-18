@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace 'com.equationl.fastdeployocr'
+    namespace 'com.liudapang000.fastdeployocr'
     compileSdk 33
 
     defaultConfig {
@@ -36,7 +36,7 @@ afterEvaluate {
         publications {
             release(MavenPublication){
                 from components.release
-                groupId = 'com.equationl.paddleocr4android'
+                groupId = 'com.liudapang000.paddleocr4android'
                 artifactId = 'fastdeplyocr'
                 version = 'V1.2.5'
             }
@@ -49,7 +49,7 @@ dependencies {
     api fileTree(include: ['*.jar'], dir: 'libs')
 
     implementation 'androidx.core:core-ktx:1.8.0'
-    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.appcompat:appcompat:1.4.1'
     implementation 'com.google.android.material:material:1.9.0'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
